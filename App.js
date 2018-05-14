@@ -31,8 +31,8 @@ export default class App extends Component {
   render() {
     if (this.state.loading) {
       return (
-				<View style={styles.mainTheme}>
-				</View>
+        <View style={styles.mainTheme}>
+        </View>
       );
     } else {
       if (this.state.jwt) {
@@ -49,11 +49,11 @@ export default class App extends Component {
 }
 
 const styles = StyleSheet.create({
-	mainTheme:{
-		backgroundColor: "#fff",
-		alignItems: 'center',
-		justifyContent: 'center',
-		flex: 1,
-	}
+  mainTheme:{
+    backgroundColor: "#fff",
+    alignItems: 'center',
+    justifyContent: 'center',
+    flex: 1,
+  }
 });
 
