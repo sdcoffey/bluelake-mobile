@@ -9,7 +9,7 @@ import {
   Text
 } from 'react-native';
 
-import BluelakeClient from '../api';
+import BluelakeClient from '../network/graphql';
 import { userJwt } from '../fs/userStorage';
 
 export default class Onboarding extends Component {

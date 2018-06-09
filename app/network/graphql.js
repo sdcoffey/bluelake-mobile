@@ -1,5 +1,8 @@
-import gql from 'graphql-tag';
 import ApolloClient from "apollo-boost";
+import ENV from '../environment';
+import gql from 'graphql-tag';
+
+import { Constants } from 'expo';
 
 const create_user_mutation = gql`
 mutation Login($phoneNumber: String!) {
@@ -21,7 +24,7 @@ export default class BluelakeClient {
 
   constructor() {
     this.client = new ApolloClient({
-      uri: "http://192.168.99.100:31855/v1/graphql"
+      uri: `${ENV.BASE_URL}/v1/graphql`
     });
   }
 
