@@ -14,6 +14,8 @@ export default class BluelakeClient {
   }
 
   async login(phoneNumber) {
+    console.log('logging in');
+
     let response = await this.client.mutate({
       mutation: LoginUserMutation,
       variables: {
