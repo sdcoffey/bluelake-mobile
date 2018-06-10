@@ -21,18 +21,18 @@ export default class BluelakeClient {
       }
     });
 
-    return response.data.login.userPublicId;
+    return response.data.login;
   }
 
-  async confirmUser(userId, code) {
+  async confirmUser(publicId, authCode) {
     let response = await this.client.mutate({
       mutation: ConfirmUserMutation,
       variables: {
-        user_id: userId,
-        code: code
+        publicId: publicId,
+        authCode: authCode
       }
     });
 
-    return response.data.confirm_user.jwt;
+    return response.data.confirmUser;
   }
 }

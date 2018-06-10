@@ -12,4 +12,4 @@ export default class BluelakeMainController extends Component {
       <View />
     );
   }
-};
+}

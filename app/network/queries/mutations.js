@@ -8,8 +8,8 @@ mutation Login($phoneNumber: String!) {
 }`;
 
 export const ConfirmUserMutation = gql`
-mutation Confirm($user_id: String!, $code: String!) {
-  confirm_user(user_id: $user_id, code: $code) {
-    jwt
+mutation Confirm($publicId: String!, $authCode: String!) {
+  confirmUser(publicId: $publicId, authCode: $authCode) {
+    userJwt
   }
 }`;
