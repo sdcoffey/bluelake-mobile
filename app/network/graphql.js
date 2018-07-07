@@ -1,9 +1,10 @@
 import ApolloClient from "apollo-boost";
 import ENV from '../environment';
 
-import { LoginUserMutation,
+import {
+  LoginUserMutation,
   ConfirmUserMutation
-}from './queries/mutations';
+} from './queries/mutations';
 
 export default class BluelakeClient {
 
